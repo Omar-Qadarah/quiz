@@ -48,6 +48,7 @@
           </button>
         </div>
       </div>
+      @yield('sidebar')
 
      
     </main>
