@@ -10,4 +10,12 @@ class course extends Model
     {
         return $this->belongsTo(lecturer::class);
     }
+    public function courseUser()
+    {
+        return $this->hasMany(course_user::class);
+    }
+    public function lecture()
+    {
+        return $this->hasMany(lecture::class);
+    }
 }
